@@ -1,0 +1,44 @@
+.emdestaques h1
+{
+    text-align: center;
+    font-size: 55px;
+    background-color: #ffffff;
+    color: #053C5E;
+}
+.emdestaques
+{
+    background-color: #ffffff;
+}
+.container
+{
+    background-color: #ffffff;
+    float: center;
+    size: 100%;
+}
+.carousel-caption
+{
+    size: 40%;
+    
+}
+
+#Raya
+{
+    margin-left: 15%;
+}
+#Divertidamente
+{
+    margin-left: 50px;
+}
+#Mulan
+{
+    margin-left: 50px;
+}
+#TJ
+{
+    margin-left: 50px;
+}
+#Alita
+{
+    margin-left: 50px;
+}
+

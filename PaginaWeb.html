@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="icon" href="Icones/Icone.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de filmes</title>
+  <link href="CSS/PaginaCSS.css" rel="stylesheet">
+  <link href="CSS/Lançamentos.css" rel="stylesheet">
+  <link href="CSS/Destaques.css" rel="stylesheet">
+  <link href="CSS/UltimasAvaliações.css" rel="stylesheet">
+  <link href="CSS/Entrevistas&Making.css" rel="stylesheet">
+  <link href="CSS/Footer.css" rel="stylesheet">
+  <link href="CSS/Mobile.css" rel="stylesheet">
+  <link href="CSS/BarraNav.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <script src="CodigoJS.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <div class="cabecalho">
+    <nav class="navbar">
+      <a id="logo" href="#">LogoAqui</a>
+      <ul>
+        <li>
+          <a href="#lancamento"> Lançamentos </a>
+        </li>
+        <li>
+          <a href="#emdestaque"> Em Destaque </a>
+        </li>
+        <li>
+          <a href="#avaliacoes"> Avaliações </a>
+        </li>
+        <li>
+          <a href="#entemakingof"> Entrevistas e Making Of </a>
+        </li>
+        <li>
+          <a href="#novidades"> Novidades </a>
+        </li>
+        <li>
+          <input type="text" id="pesquisa" onkeyup="myFunction()" placeholder="Pesquisar filmes...">
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <section id="lancamentos">
+    <div class="container-fluid">
+      <h2 class="text-center py-4">Lançamentos</h2>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="ratio ratio-16x9">
+                  <iframe width="1280" height="532" src="https://www.youtube.com/embed/uF8w-6x61fc"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h3>Raya e o último dragão</h3>
+                <p>
+                  Há muito tempo, no mundo de fantasia de Kumandra, humanos e dragões viviam juntos em harmonia. Mas
+                  quando uma força maligna ameaçou a terra, os dragões se sacrificaram para salvar a humanidade. Agora,
+                  500 anos depois, o mesmo mal voltou e cabe a uma guerreira solitária, Raya, rastrear o lendário último
+                  dragão para restaurar a terra despedaçada e seu povo dividido.
+                </p>
+                <p><b>Diretor:</b> Carlos López Estrada, Don Hall</p>
+                <p><b>Roteiro:</b> Adele Lim, Qui Nguyen</p>
+                <p><b>Estreia:</b> 4 de março de 2021</p>
+
+                <p><b>Elenco:</b> Awkwafina, Kelly Marie Tran, Gemma Chan, Alan Tudyk</p>
+                <div class="rating">
+                  <p><b>Avaliação: </b>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star half"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="ratio ratio-16x9">
+                  <iframe width="1280" height="720" src="https://www.youtube.com/embed/hWBxoH4-4yw"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h3>Soul</h3>
+                <p>
+                  Joe é um professor de música do ensino médio apaixonado por jazz, cuja vida não foi como ele esperava.
+                  Quando ele viaja a uma outra realidade para ajudar outra pessoa a encontrar sua paixão, ele descobre o
+                  verdadeiro sentido da vida.
+                </p>
+                <p><b>Diretor:</b> Pete Docter, Kemp Powers</p>
+                <p>
+                  <b>Roteiro:</b> Pete Docter, Mike Jones, Kemp Powers
+                </p>
+                <p><b>Estreia:</b> 7 de janeiro de 2021</p>
+
+                <p><b>Elenco:</b> Jamie Foxx, Tina Fey, Rachel House, Daveed Diggs</p>
+
+
+                <div class="rating">
+                  <p><b>Avaliação: </b>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star half"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="ratio ratio-16x9">
+                  <iframe width="1280" height="720" src="https://www.youtube.com/embed/Jg-ls07nixc"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h3>Tom & Jerry</h3>
+                <p>
+                  Uma das rivalidades mais amadas da história ressurge quando Jerry se muda para o hotel mais rico de
+                  Nova Iorque, na véspera do casamento do século, forçando a desesperada organizadora do evento a
+                  contratar Tom para se livrar do rato. A batalha entre gato e rato que se inicia ameaça destruir a sua
+                  carreira, o casamento e até mesmo o hotel. Mas logo um problema ainda maior surge: um diabólico
+                  funcionário começa a tramar contra os três.
+                </p>
+                <p><b>Diretor:</b> Tim Story</p>
+                <p>
+                  <b>Roteiro:</b> Dennis Marks
+                </p>
+                <p><b>Estreia:</b> 18 de fevereiro de 2021</p>
+
+                <p><b>Elenco:</b> Chloë Grace Moretz, Michael Peña, Ken Jeong</p>
+
+
+                <div class="rating">
+                  <p><b>Avaliação: </b>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star half"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="ratio ratio-16x9">
+                  <iframe width="1280" height="720" src="https://www.youtube.com/embed/AD5cvVk-4Ps"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h3>Mulan</h3>
+                <p>
+                  Quando o Imperador da China emite um decreto estabelecendo que um homem de cada família deve servir no
+                  exército imperial para defender o país dos invasores do Norte, Hua Mulan, a filha mais velha de um
+                  honrado guerreiro se apresenta no lugar de seu pai adoentado. Disfarçada de homem, como Hua Jun, ela é
+                  testada a cada etapa do caminho e deve controlar sua força interior e abraçar seu verdadeiro
+                  potencial. É uma jornada épica que vai transformá-la em uma reverenciada guerreira e levá-la a
+                  conquistar o respeito de uma nação agradecida... e um pai orgulhoso.
+                </p>
+                <p><b>Diretor:</b> Niki Caro</p>
+                <p>
+                  <b>Roteiro:</b> Lauren Hynek, Elizabeth Martin, Rick Jaffa, Amanda Silver
+                </p>
+                <p><b>Estreia:</b> 25 de março de 2020</p>
+
+                <p><b>Elenco:</b> Liu Yifei, Donnie Yen, Gong Li, Jet Li.</p>
+
+                <div class="rating">
+                  <p><b>Avaliação: </b>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star half"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <div class="emdestaques">
+    <h1>Em Destaque</h1>
+    <img id="Raya" src="Filmes/Raya.jpg" alt="Icone" width="15%">
+    <img id="Divertidamente" src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/10049-cartaz.jpg" alt="Icone"
+      width="15%">
+    <img id="TJ" src="Filmes/Tom&Jerry.jpg" alt="Icone" width="15%">
+    <img id="Alita" src="Filmes/Alita.jpg" alt="Icone" width="15%">
+  </div>
+
+
+
+  <div class="Avaliações">
+    <h1>Ultimas avaliações</h1>
+    <div class="dynamite">
+      <div class="col-4">
+
+        <img class"fluid" id="Perfil" src="FotosPerfil/Tanjiro.jpg" alt="Icone" width="13%">
+        <p>
+          <b>Jayme12:</b><br>
+          Achei que faltou muitos filmes como, Your Name, Sword Art Online e Totoro e o site
+          não está responsivo no meu celular.
+          <b>Avaliação:</b> <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star "></span>
+          <span class="fa fa-star "></span>
+        </p>
+      </div>
+      <div class="col-4">
+        <img class"fluid" id="Perfil" src="FotosPerfil/Foto1.jpg" alt="Icone" width="13%">
+        <p>
+          <b>FernandAnaK566:</b><br>
+          Eu achei o site muito bem feito pra quem fez sozinho, se eu fosse uma dos alunos que iria avaliar
+          eu com certeza daria uns 17 pontos, pelo fato de que quem fez não tinha conhecimento o suficiente
+          e é o primeiro site dele. Mas fora isso, foi feito com bastante esforço.<br>
+          <b>Avaliação:</b> <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </p>
+      </div>
+      <div class="col-4">
+        <img class"fluid" id="Perfil" src="FotosPerfil/Foto2.jpg" alt="Icone" width="13%">
+        <p>
+          <b>CríticoSincero78:</b><br>
+          Garantiu bastantes horas de entretenimento, mas não tem funcionalidade esse site, o criador
+          não tem noção de JavaScript não? Mas que desperdício de memória...<br>
+          <b>Avaliação:</b> <span class="fa fa-star checked"></span>
+          <span class="fa fa-star "></span>
+          <span class="fa fa-star "></span>
+          <span class="fa fa-star "></span>
+          <span class="fa fa-star "></span>
+        </p>
+
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="EntrevistasMK">
+    <h1>Entrevistas e Making Of</h1>
+    <div class="MK">
+      <iframe id="mkof" width="500" height="350" src="https://www.youtube.com/embed/8O5yBQUYqgo"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+      <iframe id="mkof" width="500" height="350" src="https://www.youtube.com/embed/tcBmkaIszMs"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+      <iframe id="mkof" width="500" height="350" src="https://www.youtube.com/embed/rB5MpMDMpas"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+
+    <div style="background-color:#ffffff; color:#000000">
+      <div class="container" style="margin-top:30px">
+        <div class="row">
+          <div class="col-sm-12 col-md-8 col-lg-8">
+            <h2><b>Novidades</b></h2>
+            <h5>Notícias atuais, 2021</h5>
+            <div><img id="tamanho" src="jojo.jpg"><br>
+              <p><b>1ª temporada de JoJo’s Bizarre Adventure ganha data de estreia na Netflix</b></p>
+              <p>JoJo’s Bizarre Adventure, anime inspirado no mangá escrito e ilustrado por Hirohiko
+                Araki,
+                está
+                chegando na Netflix. Já é possível ver no catálogo do serviço de streaming que a
+                primeira
+                temporada
+                será lançada no dia 26 de abril.</p>
+            </div>
+            <br>
+            <div style="background-color: #ffffff;"><img id="tamanho" src="download.jpg"><br>
+              <p><b>Morre Iara Riça, dubladora da personagem Arlequina, aos 56 anos</b></p>
+              <p>Morreu nesta terça-feira (27) a atriz e dubladora Iara Riça, de 56 anos, dona das
+                vozes de
+                personagens como Arlequina, Jean Grey de X-Men Evolution e Florzinha, de “As Meninas
+                Superpoderosas”.</p>
+            </div>
+
+            <br>
+            <div><img style="width: 280px"="tamanho"
+                src="thanos.jpg"><br>
+              <p><b>Marvel trocou ator que interpretava o Thanos em Vingadores e você não percebeu</b>
+              </p>
+              <p>Antes de Josh Brolin assumir o papel e ser o grande vilão de Vingadores: Guerra Infinita e Ultimato,
+                outro ator interpretou o vilão.</p>
+            </div>
+          </div>
+          <br>
+          <div style="background-color: #ffffff ;color: #000000; margin-top: 20px;" class="col-sm-12 col-md-4 col-lg-4">
+            <h2><b>Sobre</b></h2>
+            <p>Este site foi feito pelo estudante de Ciência da Computação na PUC Minas
+              Gabriel Felipe Ribeiro Carvalho, trabalho da disciplina
+              Desenvolvimento
+              de Interfaces Web utilizando Bootstrap, HTML e CSS. </p>
+            <h2><b>Editorial</b></h2>
+            <p><b>Editora: </b>Gabriel Felipe Ribeiro Carvalho</p>
+            <h5 style="text-align: center;">redes sociais:</h5>
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Subir a página</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Instagram</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Facebook</a>
+              </li>
+            </ul>
+            <hr class="d-sm-none">
+          </div>
+        </div>
+      </div>
+      <div style="background-color: #92374D" class="jumbotron text-center" style="margin-bottom:0">
+        <p>Copyright 2021 - Desenvolvimento de Interfaces Web - <b>ICEI PUC Minas</b></p>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

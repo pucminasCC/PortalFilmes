@@ -1,0 +1,42 @@
+#lancamentos {
+    background: #ffffff;
+    padding-bottom: 30px;
+}
+
+
+.carousel-indicators [data-bs-target] {
+    background: rgb(255, 255, 255);
+    width: 16px;
+    height: 16px;
+    border-top: 0;
+    border-bottom: 0;
+    border-radius: 16px;
+}
+
+.carousel-indicators {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.carousel-item .row .col-md-6 p:last-child {
+    margin-bottom: 0;
+}
+
+.carousel-item h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.col-md-6
+{
+    font-size: 20px;
+}
+.checked {
+    color: orange;
+  }
+
+@media screen and (max-width: 500px) 
+{
+    
+}
