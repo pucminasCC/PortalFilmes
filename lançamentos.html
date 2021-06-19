@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/BarraNav.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>Lançamentos</title>
+</head>
+<body>
+    <div class="cabecalho">
+      <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #9f9dfd"
+    >
+      <img class="navbar-brand" href="#" style="width: 150px; height: 100px;" src="./assets/Capturar.PNG"></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Alterna navegação"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Lançamentos</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#destaques">Em destaque</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#avaliacoes">Avaliações</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#entrevista">Entrevistas</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#novidades">Novidades</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="mr-sm-2" type="search" placeholder="Pesquisar" />
+          <button
+            class="btn  my-2 my-sm-0"
+            style="color: #000000"
+            type="submit"
+          >
+            Buscar
+          </button>
+        </form>
+      </div>
+    </nav>
+      </div>
+
+      <div id ="debug"></div>
+
+      <div class="row">
+        <div class="col"><img src="Filmes/Raya.jpg" alt="Raya" width="31%"></div>
+        <div class="col"><img src="Filmes/Alita.jpg" alt="Alita" width="30%"></div>
+        <div class="w-100"></div>
+        <div class="col"><img src="Filmes/Tom&Jerry2.jpg" alt="TomJerry"></div>
+        <div class="col"><img src="Filmes/Batman.jpg" alt="batima" width="30%"></div>
+      </div>
+
+      <script>        
+        fetch("sample-file.json")
+          .then(response => response.json())
+          .then(data => {
+              console.log(data.title)
+              document.querySelector("#debug").innerText = data.title
+            })
+      </script>
+      
+</body>
+</html>
