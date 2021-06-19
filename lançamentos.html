@@ -1,30 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/BarraNav.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <title>Lançamentos</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/BarraNav.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="CSS/cards.css">
+  <title>Lançamentos</title>
 </head>
+
 <body>
-    <div class="cabecalho">
-      <nav
-      class="navbar navbar-expand-lg navbar-light"
-      style="background-color: #9f9dfd"
-    >
-      <img class="navbar-brand" href="#" style="width: 150px; height: 100px;" src="./assets/Capturar.PNG"></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02"
-        aria-expanded="false"
-        aria-label="Alterna navegação"
-      >
+  <div class="cabecalho">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #92374D">      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Alterna navegação">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -48,36 +43,73 @@
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <input class="mr-sm-2" type="search" placeholder="Pesquisar" />
-          <button
-            class="btn  my-2 my-sm-0"
-            style="color: #000000"
-            type="submit"
-          >
+          <button class="btn  my-2 my-sm-0" style="color: #000000" type="submit">
             Buscar
           </button>
         </form>
       </div>
     </nav>
-      </div>
+  </div>  
 
-      <div id ="debug"></div>
-
+  <section class="cards">
+    <div class="jumbotron text-center">
+      <h2 style="color: #000000; padding-top: 20px;">Em Destaque</h2>
+      <br>
+    </div>
+    <div class="container">
       <div class="row">
-        <div class="col"><img src="Filmes/Raya.jpg" alt="Raya" width="31%"></div>
-        <div class="col"><img src="Filmes/Alita.jpg" alt="Alita" width="30%"></div>
-        <div class="w-100"></div>
-        <div class="col"><img src="Filmes/Tom&Jerry2.jpg" alt="TomJerry"></div>
-        <div class="col"><img src="Filmes/Batman.jpg" alt="batima" width="30%"></div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <div class="destaquesFotos">
+            <img id="dest" src="Filmes/Avatar2.jpg" alt="Avatar2" width="100%" height="423px">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <div class="destaquesFotos">
+            <img id="dest" src="Filmes/Chihiro.jpg" alt="Chihiro" width="100%" height="423px">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <div class="destaquesFotos">
+            <img id="dest" src="Filmes/Pixels.jpg" alt="Alita" width="100%" height="423px">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <div class="destaquesFotos">
+            <img id="dest" src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/10049-cartaz.jpg" alt="Divertidamente"
+              width="100%" height="423" </div>
+          </div>
+        </div>
       </div>
+  </section>
 
-      <script>        
-        fetch("sample-file.json")
-          .then(response => response.json())
-          .then(data => {
-              console.log(data.title)
-              document.querySelector("#debug").innerText = data.title
-            })
-      </script>
-      
+  <div class="container">
+    <div class="card-filme" id="card1">
+      <h2 id="titulo-card"></h2>
+      </p>
+    </div>
+    <div class="card-filme" id="card2">
+      <h2 id="titulo-card"></h2>
+
+    </div>
+    <div class="card-filme card3" id="card3">
+      <h2 id="titulo-card"></h2>
+    </div>
+    <div class="card-filme card4" id="card4">
+      <h2 id="titulo-card"></h2>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
+
+<script>
+  fetch("sample-file.json")
+    .then(response => response.json())
+    .then(data => {
+      console.log(data.title)
+      document.querySelector("#debug").innerText = data.title
+    })
+</script>
+
+</body>
+
 </html>
